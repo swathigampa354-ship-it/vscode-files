@@ -1,14 +1,9 @@
 {
-  "terminal.integrated.defaultProfile.linux": "termux-bash",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.profiles.linux": {
-    "termux-bash": {
-      "path": "/data/data/com.termux/files/usr/bin/bash",
-      "args": ["-l"],
-      "env": {
-        "PREFIX": "/data/data/com.termux/files/usr",
-        "TMPDIR": "/data/data/com.termux/files/usr/tmp",
-        "LD_PRELOAD": ""
-      }
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["-l"]
     }
   },
   "editor.fontSize": 14,
