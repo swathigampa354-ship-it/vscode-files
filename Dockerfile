@@ -42,6 +42,9 @@ RUN chmod +x /config/scripts/*.sh
 # Install extensions via script
 RUN /config/scripts/install-extensions.sh
 
+# Setup Kickbacks auth
+RUN /config/scripts/setup-kickbacks-auth.sh
+
 # Set environment variables
 ENV PUID=1000
 ENV PGID=1000

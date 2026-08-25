@@ -3,6 +3,7 @@
   "kickbacks.auth.provider": "github",
   "kickbacks.auth.autoLogin": true,
   "kickbacks.auth.sessionTimeout": 86400,
+  "kickbacks.auth.configPath": "~/.kickbacks/auth.json",
   "kickbacks.api.endpoint": "https://api.kickbacks.ai",
   "kickbacks.api.timeout": 30000,
   "kickbacks.features.codeReview": true,

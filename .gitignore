@@ -50,3 +50,7 @@ out/
 
 # VSIX files too large for git - download separately
 *.vsix
+
+# Auth files - DO NOT COMMIT
+~/.kickbacks/auth.json
+*.auth.json
