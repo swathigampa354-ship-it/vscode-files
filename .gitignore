@@ -48,5 +48,5 @@ out/
 .vscode-server/data
 .vscode-server/extensions/*/node_modules/
 
-# Keep VSIX files
-!*.vsix
+# VSIX files too large for git - download separately
+*.vsix

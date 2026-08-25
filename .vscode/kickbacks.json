@@ -1,0 +1,14 @@
+{
+  "kickbacks.auth.enabled": true,
+  "kickbacks.auth.provider": "github",
+  "kickbacks.auth.autoLogin": true,
+  "kickbacks.auth.sessionTimeout": 86400,
+  "kickbacks.api.endpoint": "https://api.kickbacks.ai",
+  "kickbacks.api.timeout": 30000,
+  "kickbacks.features.codeReview": true,
+  "kickbacks.features.autoComplete": true,
+  "kickbacks.features.chat": true,
+  "kickbacks.terminal.integrated": true,
+  "kickbacks.terminal.shell": "/bin/bash",
+  "kickbacks.theme.autoDetect": true
+}

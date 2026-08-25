@@ -1,0 +1,16 @@
+{
+  "claude-code.auth.enabled": true,
+  "claude-code.auth.autoLogin": true,
+  "claude-code.auth.provider": "anthropic",
+  "claude-code.api.endpoint": "https://api.anthropic.com",
+  "claude-code.api.timeout": 60000,
+  "claude-code.features.codeGeneration": true,
+  "claude-code.features.codeReview": true,
+  "claude-code.features.refactoring": true,
+  "claude-code.features.documentation": true,
+  "claude-code.terminal.integrated": true,
+  "claude-code.terminal.shell": "/bin/bash",
+  "claude-code.theme.autoDetect": true,
+  "claude-code.notifications.enabled": true,
+  "claude-code.telemetry.enabled": false
+}
