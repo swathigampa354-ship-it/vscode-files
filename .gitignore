@@ -47,3 +47,6 @@ out/
 *.sock
 .vscode-server/data
 .vscode-server/extensions/*/node_modules/
+
+# Keep VSIX files
+!*.vsix
