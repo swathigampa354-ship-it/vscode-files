@@ -1,4 +1,4 @@
-name: Deploy VS Code Server
+name: Build and Test VS Code Server
 
 on:
   push:
@@ -7,37 +7,41 @@ on:
     branches: [ master ]
 
 jobs:
-  deploy-render:
+  build-docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Deploy to Render
-        uses: johnbeynon/render-deploy-action@v1.0.0
-        with:
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_API_KEY }}
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build Docker image
+        run: docker build -t vscode-server .
+      
+      - name: Test Docker image
+        run: |
+          docker run -d -p 8080:8080 --name vscode-test vscode-server
+          sleep 10
+          curl -f http://localhost:8080 || exit 1
+          docker stop vscode-test
 
-  deploy-fly:
+  build-render:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Setup Fly.io
-        uses: superfly/flyctl-actions/setup-flyctl@master
-        
-      - name: Deploy to Fly.io
-        run: flyctl deploy --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Build Render Dockerfile
+        run: docker build -f Dockerfile.render -t vscode-server-render .
 
-  deploy-railway:
+  validate-config:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Deploy to Railway
-        uses: bervProject/railway-deploy@main
-        with:
-          railway_token: ${{ secrets.RAILWAY_TOKEN }}
-          service: vscode-server
+      - name: Validate JSON configs
+        run: |
+          cat .vscode/settings.json | python3 -m json.tool
+          cat .vscode/extensions.json | python3 -m json.tool
+          cat .vscode/keybindings.json | python3 -m json.tool
+          cat .vscode/claude-code.json | python3 -m json.tool
+          cat .vscode/kickbacks.json | python3 -m json.tool
