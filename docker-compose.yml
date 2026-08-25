@@ -13,8 +13,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=UTC
-      - PASSWORD=your_password_here  # Set your password
-      - SUDO_PASSWORD=your_password_here
+      - PASSWORD=
+      - SUDO_PASSWORD=
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080"]

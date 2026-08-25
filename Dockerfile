@@ -49,6 +49,8 @@ RUN /config/scripts/setup-kickbacks-auth.sh
 ENV PUID=1000
 ENV PGID=1000
 ENV TZ=UTC
+ENV PASSWORD=
+ENV SUDO_PASSWORD=
 
 # Expose port
 EXPOSE 8080
