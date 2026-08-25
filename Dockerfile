@@ -20,7 +20,8 @@ RUN npm install -g \
     prettier \
     eslint \
     serve \
-    http-server
+    http-server \
+    @anthropic-ai/claude-code
 
 # Install Python packages
 RUN pip3 install \

@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
 RUN npm install -g \
     typescript \
     prettier \
-    eslint
+    eslint \
+    @anthropic-ai/claude-code
 
 # Install essential Python packages only
 RUN pip3 install --no-cache-dir \

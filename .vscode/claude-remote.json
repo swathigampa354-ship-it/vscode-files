@@ -1,0 +1,13 @@
+{
+  "claude-code.remote.enabled": true,
+  "claude-code.remote.tunnel": "cloudflared",
+  "claude-code.remote.autoConnect": true,
+  "claude-code.remote.localEndpoint": "http://localhost:8080",
+  "claude-code.remote.authRequired": false,
+  "claude-code.terminal.integrated": true,
+  "claude-code.terminal.shell": "/bin/bash",
+  "claude-code.terminal.env": {
+    "CLAUDE_CODE_REMOTE": "1",
+    "CLAUDE_CODE_LOCAL": "0"
+  }
+}
