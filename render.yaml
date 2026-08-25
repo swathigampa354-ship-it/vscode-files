@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vscode-server
+    runtime: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PASSWORD
+        sync: false
+      - key: SUDO_PASSWORD
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true
