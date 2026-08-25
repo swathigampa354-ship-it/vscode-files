@@ -1,0 +1,42 @@
+{
+  "terminal.integrated.defaultProfile.linux": "termux-bash",
+  "terminal.integrated.profiles.linux": {
+    "termux-bash": {
+      "path": "/data/data/com.termux/files/usr/bin/bash",
+      "args": ["-l"],
+      "env": {
+        "PREFIX": "/data/data/com.termux/files/usr",
+        "TMPDIR": "/data/data/com.termux/files/usr/tmp",
+        "LD_PRELOAD": ""
+      }
+    }
+  },
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.enableBell": false,
+  "workbench.startupEditor": "none"
+}

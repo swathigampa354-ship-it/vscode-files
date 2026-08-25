@@ -1,0 +1,49 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Node modules
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+venv/
+.env
+
+# Rust
+target/
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# VS Code Server specific
+*.sock
+.vscode-server/data
+.vscode-server/extensions/*/node_modules/

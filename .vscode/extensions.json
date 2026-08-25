@@ -1,0 +1,31 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.path-intellisense",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "ms-vscode.live-server",
+    "ritwickdey.LiveServer",
+    "humao.rest-client",
+    "humao.rest-client",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "hashicorp.terraform",
+    "github.vscode-github-actions",
+    "ms-vscode.remote-ssh",
+    "ms-vscode.remote-containers",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "vincaslt.highlight-matching-tag"
+  ]
+}
